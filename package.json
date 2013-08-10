@@ -1,0 +1,28 @@
+{
+  "name": "norbotix",
+  "version": "0.0.0",
+  "description": "Use your javascript powers to control the Sphero by Orbotix",
+  "main": "lib/index.js",
+  "dependencies": {
+    "serialport": "1.1.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "should": "~1.2.2",
+    "mocha": "~1.12.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "mocha -r should tests --recursive -R spec"
+  },
+  "keywords": [
+    "orbotx",
+    "sphero",
+    "nodebot",
+    "nodebots"
+  ],
+  "author": "Michael McHugh <developer@yrucalling.me>"
+}
