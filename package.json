@@ -1,6 +1,6 @@
 {
-  "name": "norbotix",
-  "version": "0.0.0",
+  "name": "spheron",
+  "version": "0.0.1",
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "dependencies": {
@@ -19,7 +19,7 @@
     "test": "mocha -r should tests --recursive -R spec"
   },
   "keywords": [
-    "orbotx",
+    "orbotix",
     "sphero",
     "nodebot",
     "nodebots"
