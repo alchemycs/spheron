@@ -13,7 +13,8 @@
     "mocha": "~1.12.0"
   },
   "directories": {
-    "example": "example"
+    "example": "examples",
+    "test": "tests"
   },
   "scripts": {
     "test": "mocha -r should tests --recursive -R spec"
@@ -24,5 +25,13 @@
     "nodebot",
     "nodebots"
   ],
-  "author": "Michael McHugh <developer@yrucalling.me>"
+  "author": "Michael McHugh <developer@yrucalling.me>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alchemycs/spheron.git"
+  },
+  "license": "Simplified BSD License",
+  "bugs": {
+    "url": "https://github.com/alchemycs/spheron/issues"
+  }
 }
