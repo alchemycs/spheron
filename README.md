@@ -35,6 +35,10 @@ There are a few examples in the `examples` directory:
 * `repl.js` provides a simple REPL shell to get you started and try things out
 * `vege.js` uses the raw `.write()` method to send packets to the Sphero
 * `police.js` takes advantage of the chained API
+* See `spheron` being used in [spheron-leap](https://github.com/alchemycs/spheron-leap) controlling Sphero using Leap Motion
+
+[![](http://img.youtube.com/vi/3ratT1yCnow/0.jpg)](http://www.youtube.com/watch?v=3ratT1yCnow&feature=share&list=UUKZdVrHYWr7rVNKbs9_fXnw)
+
 
 ##Direction
 I plan on creating several execution strategies so that commands can be chained, waited upon and evented in such a way
