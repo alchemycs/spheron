@@ -1,5 +1,7 @@
 # Use your javascript powers to control the Sphero by Orbotix
 
+[![Build Status](https://travis-ci.org/alchemycs/spheron.png?branch=master)](https://travis-ci.org/alchemycs/spheron)
+
 ## Quick Start
 
     npm install spheron
