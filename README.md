@@ -37,6 +37,7 @@ There are a few examples in the `examples` directory:
 * `repl.js` provides a simple REPL shell to get you started and try things out
 * `vege.js` uses the raw `.write()` method to send packets to the Sphero
 * `police.js` takes advantage of the chained API
+* `police-macro.js` uses macros to create a police light effect
 * See `spheron` being used in [spheron-leap](https://github.com/alchemycs/spheron-leap) controlling Sphero using Leap Motion
 
 [![](http://img.youtube.com/vi/3ratT1yCnow/0.jpg)](http://www.youtube.com/watch?v=3ratT1yCnow&feature=share&list=UUKZdVrHYWr7rVNKbs9_fXnw)
@@ -49,19 +50,27 @@ the Sphero.
 
 Something like: `sphero.startMacro().setRGB(0x00FF00).strobeLED({period:60}).wait(1000).sleep().saveMacro()`
 
-I'm also planning on implementing the API as completely as possible. [Orbotix](https://www.gosphero.com/company/) have
+I'm also planning on implementing the API as completely as possible (as time permits). [Orbotix](https://www.gosphero.com/company/) have
 done a great job in [documenting the Sphero API](https://github.com/orbotix/DeveloperResources)!
+
+##Macros
+The basic macro code has been built but requires further testing and documentation. Please feel free to try it out or ask questions.
+
+Obviously, this needs more documentation.
 
 ##TODO
 The most immediate things to be done include:
 
 * Documentation!
-* Create a macro builder
+* Create <strike>a macro builder</strike> macro builder documentation (until then, please see [examples/police-macro.js](examples/police-macro.js) and code for usage details)
+* Smarter objects passed into event listeners to make usage easier
 * Implement callbacks (or just stick with an event model?)
+* This has been written against the Orbotix Communications API 1.46, need to check against version 1.50 and on Sphero 2.0.
 
 ## Acknowledgments
 
 Thanks to:
+
 * Chris Williams for making [node-serialport](https://github.com/voodootikigod/node-serialport)
 * [Orbotix](https://www.gosphero.com/company/) for creating and documenting the [Sphero API](https://github.com/orbotix/DeveloperResources)
 
