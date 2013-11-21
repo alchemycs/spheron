@@ -1,7 +1,7 @@
 /* jshint node:true */
 /*
 
- Turns off stabalisation and gently pulses a nice green colour
+ Creates a macro to make Sphero flash blue and red like a police siren
 
  This file is expected to be run something like this:
 
