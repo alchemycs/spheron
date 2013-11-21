@@ -1,6 +1,6 @@
 {
   "name": "spheron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "dependencies": {
