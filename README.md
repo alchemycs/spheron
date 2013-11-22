@@ -56,7 +56,7 @@ done a great job in [documenting the Sphero API](https://github.com/orbotix/Deve
 ##Methods
 The `spheron` methods are chainable and certain methods are either query or command based on the number of arguments (much like jQuery).
 
-###`sphero.setResetTimeout([true|false])`
+###`sphero.resetTimeout([true|false])`
 Called with no arguments this method will return the current state.
 
 When this has been set to `true` then sphero will reset the internal command timeout after each command. This prevents sphero shutting down while in use. When this is `false` sphero will continue it's internal timeout count even when packets are sent.
