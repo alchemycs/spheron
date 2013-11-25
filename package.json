@@ -1,10 +1,10 @@
 {
   "name": "spheron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "dependencies": {
-    "serialport": "1.1.x"
+    "serialport": "1.2.x"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
