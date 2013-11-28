@@ -8,12 +8,12 @@ S>
 var sphero = require('../lib/sphero');
 var repl = require('repl');
 
-var context = repl.start('S> ').context;
+var context = repl.start('Spher⊚n > ').context;
 context.dev = '/dev/cu.Sphero-PBR-RN-SPP'; //Change this to match your device
 context.sphero = sphero;
 context.toolbelt = require('../lib/toolbelt');
 context.commands = require('../lib/commands');
-
+context.macro = require('../lib/macro-builder').macro;
 
 context.o = { resetTimeout:true, requestAcknowledgement:true };
 context.s = sphero();
