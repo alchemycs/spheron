@@ -23,7 +23,7 @@ sphero.on('open', function() {
 sphero.open(spheroPort);
 ```
 
-Run that and your sphero will turn blue. You can pass hex colours such as `sphero.setRGB(0xFF00FF})` for `PURPLE`.
+Run that and your sphero will turn blue. You can pass hex colours such as `sphero.setRGB(0xFF00FF)` for `PURPLE`.
 
 There are some named colours in `toolbelt.COLORS`.
 
