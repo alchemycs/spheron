@@ -18,9 +18,9 @@ describe('commands.api', function() {
       packet.length.should.eql(9);
     });
   });
-  describe('#setStabalisation()', function() {
+  describe('#setStabilization()', function() {
     it('should have correct CID/DID', function() {
-      var packet = api.setStabalisation(true);
+      var packet = api.setStabilization(true);
       assertHeader(packet, 0x02);
       packet.length.should.eql(8);
     });
