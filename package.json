@@ -4,7 +4,7 @@
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "homepage": "http://cylonjs.com",
-  "bugs": "https://github.com/hybridgroup/cylon-firmata/issues",
+  "bugs": "https://github.com/hybridgroup/spheron/issues",
   "author": "Michael McHugh <developer@yrucalling.me>",
   "contributors": [
     "Michael McHugh <developer@yrucalling.me>",
@@ -27,6 +27,8 @@
     "test": "mocha -r should tests --recursive -R spec"
   },
   "keywords": [
+    "cylon",
+    "cylon-sphero",
     "orbotix",
     "sphero",
     "nodebot",
@@ -37,7 +39,4 @@
     "url": "git://github.com/hybridgroup/spheron.git"
   },
   "license": "Simplified BSD License",
-  "bugs": {
-    "url": "https://github.com/alchemycs/spheron/issues"
-  }
 }
