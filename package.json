@@ -1,8 +1,11 @@
 {
-  "name": "spheron",
-  "version": "0.0.2",
+  "name": "hybridgroup-spheron",
+  "version": "0.0.3",
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
+  "homepage": "http://cylonjs.com",
+  "bugs": "https://github.com/hybridgroup/cylon-firmata/issues",
+  "author": "Michael McHugh <developer@yrucalling.me>",
   "dependencies": {
     "serialport": "1.3.x"
   },
@@ -25,10 +28,9 @@
     "nodebot",
     "nodebots"
   ],
-  "author": "Michael McHugh <developer@yrucalling.me>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/alchemycs/spheron.git"
+    "url": "git://github.com/hybridgroup/spheron.git"
   },
   "license": "Simplified BSD License",
   "bugs": {
