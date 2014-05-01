@@ -1,6 +1,6 @@
 {
   "name": "hybridgroup-spheron",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "homepage": "http://cylonjs.com",
@@ -11,7 +11,7 @@
     "Edgar Silva <https://github.com/edgarsilva>"
   ],
   "dependencies": {
-    "serialport": "1.3.x"
+    "serialport": "1.4.x"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -38,5 +38,5 @@
     "type": "git",
     "url": "git://github.com/hybridgroup/spheron.git"
   },
-  "license": "Simplified BSD License",
+  "license": "Simplified BSD License"
 }
