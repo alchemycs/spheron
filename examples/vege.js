@@ -20,7 +20,7 @@ var colourStart = 0x006600;
 var colourStop = 0x00FF00;
 
 s.on('open', function() {
-  s.write(commands.api.setStabalisation(false));
+  s.write(commands.api.setStabilisation(false));
 
   var step = 0;
   var steps = 30*1;
