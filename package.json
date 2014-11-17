@@ -1,6 +1,6 @@
 {
   "name": "hybridgroup-spheron",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Use your javascript powers to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "homepage": "http://cylonjs.com",
