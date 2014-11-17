@@ -11,7 +11,8 @@
     "Edgar Silva <https://github.com/edgarsilva>"
   ],
   "dependencies": {
-    "serialport": "1.4.x"
+    "serialport": "~1.4.6",
+    "browser-serialport": "~1.0.6"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
