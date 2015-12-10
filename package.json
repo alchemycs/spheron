@@ -1,7 +1,7 @@
 {
   "name": "hybridgroup-spheron",
-  "version": "0.3.0",
-  "description": "Use your javascript powers to control the Sphero by Orbotix",
+  "version": "0.4.0",
+  "description": "Fork of @alchemycs module to control the Sphero by Orbotix",
   "main": "lib/index.js",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/spheron/issues",
@@ -11,7 +11,7 @@
     "Edgar Silva <https://github.com/edgarsilva>"
   ],
   "dependencies": {
-    "serialport": "~1.6.3",
+    "serialport": "^2.0.5",
     "browser-serialport": "~2.0.1"
   },
   "devDependencies": {

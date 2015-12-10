@@ -1,10 +1,12 @@
 # Use your javascript powers to control the Sphero by Orbotix
 
-[![Build Status](https://travis-ci.org/alchemycs/spheron.png?branch=master)](https://travis-ci.org/alchemycs/spheron)
+This is the Hybrid Group fork of the main Spheron module. We actually recommend using Sphero.js (https://github.com/orbotix/sphero.js) the "official" JavaScript SDK from Sphero, but we've made some updates to this module for backward compatibilty.
+
+[![Build Status](https://travis-ci.org/hybridgroup/spheron.png?branch=master)](https://travis-ci.org/hybridgroup/spheron)
 
 ## Quick Start
 
-    npm install spheron
+    npm install hybridgroup-spheron
 
 Connect your [Sphero](http://gosphero.com) to your computer via bluetooth.
 
