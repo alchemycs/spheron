@@ -1,6 +1,10 @@
 # Use your javascript powers to control the Sphero by Orbotix
 
-This is the Hybrid Group fork of the main Spheron module. We actually recommend using Sphero.js (https://github.com/orbotix/sphero.js) the "official" JavaScript SDK from Sphero, but we've made some updates to this module for backward compatibilty.
+This is the Hybrid Group fork of the main Spheron module. But you probably should not use it.
+
+We recommend using Sphero.js (https://github.com/orbotix/sphero.js) the "official" JavaScript SDK from Sphero, but we made some updates to this module for backward compatibility.
+
+However, we are no longer maintaining this fork. You should use Sphero.js as it is officially supported and maintained by Sphero.
 
 [![Build Status](https://travis-ci.org/hybridgroup/spheron.png?branch=master)](https://travis-ci.org/hybridgroup/spheron)
 
