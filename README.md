@@ -31,7 +31,7 @@ There are some named colours in `toolbelt.COLORS`.
 Communications over bluetooth are done through [node-serialport](https://github.com/voodootikigod/node-serialport) so
 please check there for what you need to make it work.
 
-##Examples
+## Examples
 There are a few examples in the `examples` directory:
 
 * `repl.js` provides a simple REPL shell to get you started and try things out
@@ -43,7 +43,7 @@ There are a few examples in the `examples` directory:
 [![](http://img.youtube.com/vi/3ratT1yCnow/0.jpg)](http://www.youtube.com/watch?v=3ratT1yCnow&feature=share&list=UUKZdVrHYWr7rVNKbs9_fXnw)
 
 
-##Development Direction
+## Development Direction
 I plan on creating several execution strategies so that commands can be chained, waited upon and evented in such a way
 that it can be run interactively or converted into a `macro` or (possibly?) `orbBasic` program and saved directly to
 the Sphero.
@@ -53,27 +53,27 @@ Something like: `sphero.startMacro().setRGB(0x00FF00).strobeLED({period:60}).wai
 I'm also planning on implementing the API as completely as possible (as time permits). [Orbotix](https://www.gosphero.com/company/) have
 done a great job in [documenting the Sphero API](https://github.com/orbotix/DeveloperResources)!
 
-##Methods
+## Methods
 The `spheron` methods are chainable and certain methods are either query or command based on the number of arguments (much like jQuery).
 
-###`sphero.resetTimeout([true|false])`
+### `sphero.resetTimeout([true|false])`
 Called with no arguments this method will return the current state.
 
 When this has been set to `true` then sphero will reset the internal command timeout after each command. This prevents sphero shutting down while in use. When this is `false` sphero will continue it's internal timeout count even when packets are sent.
 
-###`sphero.requestAcknowledgement([true|false])`
+### `sphero.requestAcknowledgement([true|false])`
 Called with no arguments this method will return the current state.
 
 When this has been set to `true` then sphero will emit a *message* in response to the command. When this is `false` sphero will not emit a *message*. Be mindfull that if this is false and you send a command asking for information (eg, current battery state) then you will **not** receive a response.
 
-###More Commands
+### More Commands
 I've tried to implement most of the API commands, and will endevour to have more complete documentation done over the Christmas 2013 period. Please feel free to ask me any questions in the meantime.
 
 
-##Events
+## Events
 The `sphero` object returned by the `spheron()` methid is an `EventEmitter` and supports the following events:
 
-###`sphero.on('error', callback)`
+### `sphero.on('error', callback)`
 Emitted when an error occurs. This is usaually connection oriented. The `callback` function simply takes a single error argument:
 
 ```
@@ -82,7 +82,7 @@ sphero.on('error', function(error) {
 });
 ```
 
-###`sphero.on('open', callback)`
+### `sphero.on('open', callback)`
 This event is triggered once the connection to your sphero has been established. At this point it is now safe to send commands to your sphero.
 
 ```
@@ -91,7 +91,7 @@ sphero.on('open', function() {
 });
 ```
 
-###`sphero.on('close', callback)`
+### `sphero.on('close', callback)`
 When the connection to your sphero has been closed, this event will let you know.
 
 ```
@@ -100,7 +100,7 @@ sphero.on('close', function() {
 });
 ```
 
-###`sphero.on('end', callback)`
+### `sphero.on('end', callback)`
 When the connection to your sphero has ended, this event will let you know.
 
 ```
@@ -109,7 +109,7 @@ sphero.on('end', function() {
 });
 ```
 
-###`sphero.on('oob', callback)`
+### `sphero.on('oob', callback)`
 Any data that sphero sends that is not a recognised packet (i.e., Out Of Band)can be read from this event. Be mindful that the argument to the `callback` is a `Buffer` that has not been composed in any way. This means anything the sphero is sending out of band might be broken into several events.
 
 ```
@@ -119,7 +119,7 @@ sphero.on('oob', function(aBuffer) {
 ```
 
 
-###`sphero.on('message', callback)`
+### `sphero.on('message', callback)`
 A *message* is an acknowledgement from sphero in response to a command. The `callback` take as the only argument an object that represents the message.
 
 ```
@@ -128,7 +128,7 @@ sphero.on('message', function(message) {
 });
 ```
 
-###`sphero.on('notification', callback)`
+### `sphero.on('notification', callback)`
 A *notification* is sent from sphero to advise of a condition such as low battery or a detected change in the locator module. The `callback` take as the only argument an object that represents the notification.
 
 ```
@@ -137,7 +137,7 @@ sphero.on('notification', function(notification) {
 });
 ```
 
-###`sphero.on('packet', callback)`
+### `sphero.on('packet', callback)`
 This event is a convenienve that is emitted on either a *message* or *notification* event. The `callback` takes a single argument that is either a *notification* or a *message*.
 
 ```
@@ -153,10 +153,10 @@ sphero.on('packet', function(packet) {
 });
 ```
 
-##Event Packets
+## Event Packets
 The *message* and *notification* packets have the following structure:
 
-###Message Packet
+### Message Packet
 ```
 {
   SOP1		(this is always 0xFF),
@@ -169,7 +169,7 @@ The *message* and *notification* packets have the following structure:
 }
 ```
 
-###Notification Packet
+### Notification Packet
 ```
 {
   SOP1		(this is always 0xFF),
@@ -183,12 +183,12 @@ The *message* and *notification* packets have the following structure:
 
 For more details on the *message* and *notification* packets please see the [Sphero API Giude](https://github.com/orbotix/DeveloperResources/blob/ab81f775274494082b63422a41db22685b003c6f/docs/Sphero_API_1.46.pdf?raw=true).
 
-##Macros
+## Macros
 The basic macro code has been built but requires further testing and documentation. Please feel free to try it out or ask questions.
 
 Obviously, this needs more documentation.
 
-##TODO
+## TODO
 The most immediate things to be done include:
 
 * Documentation!
